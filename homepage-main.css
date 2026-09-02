@@ -73,7 +73,7 @@ nav a {
 .member-card {
   /* Locks uniform width on desktop, but prevents overflowing narrow screens */
   flex: 0 1 280px;
-  width: 280px;
+  width: 280px;   
   max-width: 100%; 
   
   display: flex;
@@ -126,8 +126,11 @@ nav a {
 }
 
 .member-card h4 {
+	text-transform: uppercase;
+	margin-top: 0px;
 	line-height: 0.5rem;
 	color: gray;
+	font-family:
 }
 
 .member-card img {
