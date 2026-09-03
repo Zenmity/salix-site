@@ -7,6 +7,10 @@
   --p-font: "DM Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -51,10 +55,32 @@ nav a {
   padding: 0.5rem 1rem;
 }
 
-.hero {
+/* Make the title banner fill the full height of the screen */
+.directory-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  /* Takes up 100% of the viewport height minus the nav height if fixed */
+  min-height: 100vh; 
+  padding: 2rem 1rem;
   text-align: center;
-  padding: 4rem 1rem;
-  background-color: #fff;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+/* Optional styling to space out text and button inside the intro */
+.directory-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.directory-hero p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin-bottom: 2rem;
 }
 
 .btn {
@@ -78,6 +104,7 @@ h2 {
 h3 {
   text-align: center;
   font-size: 5rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Style the parent section to add floating padding and horizontal alignment */
@@ -148,7 +175,7 @@ h3 {
   font-weight: 800;
   text-transform: uppercase;
   color: var(--text-color);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.2rem;
 }
 
 .member-card h5 {
@@ -158,7 +185,6 @@ h3 {
   color: gray;
   font-family: "Inter", sans-serif;
 }
-
 .member-card p {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
