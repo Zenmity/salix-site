@@ -1,75 +1,89 @@
 /* Core Styling & Variables */
 :root {
-    --primary-color: #147936;
-    --accent-color: #d4af37;
-    --text-color: #333;
-    --bg-color: #f8f9fa;
+  --primary-color: #147936;
+  --accent-color: #d4af37;
+  --text-color: #333;
+  --bg-color: #f8f9fa;
+  --p-font: "DM Sans", sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    color: var(--text-color);
-    background-color: var(--bg-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: right;
-    background-color: var(--primary-color);
-    padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
 }
 
 nav .logo {
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
 }
 
 nav .active-nav {
-	background-color: white;
-	color: #147936;
-	font-weight: 950;
-	border-radius: 20px;
-	padding: 0.5rem 1rem;
-	
+  background-color: white;
+  color: #147936;
+  font-weight: 950;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
 }
 
 nav a {
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
 }
 
 .hero {
-    text-align: center;
-    padding: 4rem 1rem;
-    background-color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #fff;
 }
 
 .btn {
-    display: inline-block;
-    background-color: var(--accent-color);
-    color: #000;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-    margin-top: 1rem;
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 1rem;
 }
+
+h2 {
+  gap: 24px;
+  padding: 2rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 5rem;
+}
+
 /* Style the parent section to add floating padding and horizontal alignment */
 .board-grid {
-  max-width: 1200px;  /* Keeps the grid from stretching too wide on massive screens */
-  margin: 0 auto;     /* Centers the section horizontally */
+  max-width: 1200px; /* Keeps the grid from stretching too wide on massive screens */
+  margin: 0 auto; /* Centers the section horizontally */
   padding: 2rem 2rem; /* Creates top/bottom breathing room and left/right side offset */
 }
 
@@ -84,9 +98,9 @@ nav a {
 .member-card {
   /* Locks uniform width on desktop, but prevents overflowing narrow screens */
   flex: 0 1 280px;
-  width: 280px;   
-  max-width: 100%; 
-  
+  width: 280px;
+  max-width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,7 +109,7 @@ nav a {
   padding: 20px;
   text-align: center;
   background-color: #ffffff;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
 }
 
@@ -107,22 +121,22 @@ nav a {
 
   .member-card {
     /* Takes up full width on mobile devices for clean stacking */
-    flex: 1 1 100%; 
+    flex: 1 1 100%;
     width: 100%;
     padding: 16px;
   }
 }
 
 /* Card header styling */
-.member-card h3 {
+.member-card h4 {
   margin: 10px 0 5px 0;
   line-height: 1.2;
 }
 
 .boardfirst {
   display: block;
-  font-size: 0.85rem;
-  font-weight: normal;
+  font-size: 0.75rem;
+  font-weight: bold;
   color: #666;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -131,17 +145,34 @@ nav a {
 .boardlast {
   display: block;
   font-size: 1.35rem;
-  font-weight: bold;
+  font-weight: 800;
   text-transform: uppercase;
   color: var(--text-color);
+  letter-spacing: 0.2em;
 }
 
-.member-card h4 {
-	text-transform: uppercase;
-	margin-top: 0px;
-	line-height: 0.5rem;
-	color: gray;
-	font-family:
+.member-card h5 {
+  text-transform: uppercase;
+  margin-top: 0px;
+  line-height: 0.5rem;
+  color: gray;
+  font-family: "Inter", sans-serif;
+}
+
+.member-card p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+}
+
+.member-card address a {
+  line-height: .4em;
+  font-size: small;
+  font-weight: 550;
+  color: #fff;
+  text-decoration: none;
+  background-color: #153a27;
+  border-radius: 20px;
+  padding: .5rem 1rem;
 }
 
 .member-card img {
@@ -152,18 +183,18 @@ nav a {
 }
 
 footer {
-    text-align: center;
-    padding: 0.2rem;
-    line-height: 0.2rem;
-    background-color: var(--primary-color);
-    color: #fff;
+  text-align: center;
+  padding: 0.2rem;
+  line-height: 0.2rem;
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 .support {
-	font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 .support-contact {
-	font-weight: bold;
-	color: white;
+  font-weight: bold;
+  color: white;
 }
