@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="directory.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TSO | Directory</title>
@@ -10,7 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="directory.css" />
   </head>
   <body>
     <header>
@@ -24,7 +25,7 @@
       </nav>
     </header>
     <main>
-      <section class="directory-hero">
+      <section class="directory-hero snap-section">
         <h1>Leadership & Members</h1>
         <p>
           Meet the dedicated individuals driving the vision and initiatives of
@@ -32,7 +33,8 @@
         </p>
 
         <!-- Button linked to the directory section below -->
-        <a href="#members" class="btn">Explore Directory</a>
+        <a href="#founders" class="btn">See Founders</a>
+        <a href="#members" class="btn">See the Board of directors</a>
       </section>
       <!-- <section class="hero">
         <h1>Our Leaders</h1>
@@ -48,21 +50,24 @@
 
       <!-- Fixed outer section block -->
       <section class="members-wrapper">
-        <h2>Our Members</h2>
-
-        <section class="board-grid">
-          <h3>Founders</h3>
+        <section class="board-grid" id="founders">
+          <h2>Founders</h2>
           <div class="member-container">
             <article class="member-card">
-              <h4>
+              <h3>
                 <span class="boardfirst">Raymond</span>
                 <span class="boardlast">Herrera</span>
-              </h4>
-              <h5>Chancellor</h5>
+              </h3>
+              <h4>Chancellor</h4>
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
               />
-              <p>Description</p>
+              <p>
+                Founder and Chancellor of
+                <span class="ordername">The Illustrious Order of the Salix</span
+                >. Directing executive strategy, administrative operations, and
+                organizational growth from the organization's inception.
+              </p>
               <address>
                 <a
                   href="mailto:chancellor@salixorder.org"
@@ -72,104 +77,118 @@
               </address>
             </article>
             <article class="member-card">
-              <h4>
+              <h3>
                 <span class="boardfirst">Desmond</span>
                 <span class="boardlast">Brooks</span>
-              </h4>
-              <h5>Vice Chancellor</h5>
+              </h3>
+              <h4>Vice Chancellor</h4>
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
               />
               <p>Description</p>
+              <address>
+                <a
+                  href="mailto:vicechancellor@salixorder.org"
+                  aria-label="Email the Vice Chancellor at vice chancellor at salix order dot org"
+                  >vicechancellor@salixorder.org</a
+                >
+              </address>
             </article>
             <article class="member-card">
-              <h4>
+              <h3>
                 <span class="boardfirst">Drake</span>
                 <span class="boardlast">Myers</span>
-              </h4>
-              <h5>Exchequer</h5>
+              </h3>
+              <h4>Exchequer</h4>
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
               />
               <p>Description</p>
+              <address>
+                <a
+                  href="mailto:chancellor@salixorder.org"
+                  aria-label="Email the Exchequer at exchequer at salix order dot org"
+                  >exchequer@salixorder.org</a
+                >
+              </address>
             </article>
           </div>
         </section>
 
-        <section class="board-grid">
+        <section class="board-grid" id="board">
           <div class="member-container">
             <article class="member-card">
-              <h4>
+              <h3>
                 <span class="boardfirst">Firstname</span>
                 <span class="boardlast">Lastname</span>
-              </h4>
-              <h5>Board Member</h5>
+              </h3>
+              <h4>Board Member</h4>
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
               />
               <p>Description</p>
             </article>
             <article class="member-card">
-              <h4>
+              <h3>
                 <span class="boardfirst">Firstname</span>
                 <span class="boardlast">Lastname</span>
-              </h4>
-              <h5>Board Member</h5>
+              </h3>
+              <h4>Board Member</h4>
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
               />
               <p>Description</p>
             </article>
             <article class="member-card">
-              <h4>
+              <h3>
                 <span class="boardfirst">Firstname</span>
                 <span class="boardlast">Lastname</span>
-              </h4>
-              <h5>Board Member</h5>
+              </h3>
+              <h4>Board Member</h4>
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
               />
               <p>Description</p>
             </article>
             <article class="member-card">
-              <h4>
+              <h3>
                 <span class="boardfirst">Firstname</span>
                 <span class="boardlast">Lastname</span>
-              </h4>
-              <h5>Board Member</h5>
+              </h3>
+              <h4>Board Member</h4>
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
               />
               <p>Description</p>
             </article>
             <article class="member-card">
-              <h4>
+              <h3>
                 <span class="boardfirst">Firstname</span>
                 <span class="boardlast">Lastname</span>
-              </h4>
-              <h5>Board Member</h5>
+              </h3>
+              <h4>Board Member</h4>
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
               />
               <p>Description</p>
             </article>
             <article class="member-card">
-              <h4>
+              <h3>
                 <span class="boardfirst">Firstname</span>
                 <span class="boardlast">Lastname</span>
-              </h4>
-              <h5>Board Member</h5>
+              </h3>
+              <h4>Board Member</h4>
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
               />
               <p>Description</p>
             </article>
             <article class="member-card">
-              <h4>
+              <h3>
                 <span class="boardfirst">Firstname</span>
                 <span class="boardlast">Lastname</span>
-              </h4>
-              <h5>Board Member</h5>
+              </h3>
+              <h4>Board Member</h4>
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
               />
