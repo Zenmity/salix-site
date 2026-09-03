@@ -37,6 +37,8 @@ nav ul {
 nav a {
     color: #fff;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .hero {

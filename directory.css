@@ -34,9 +34,20 @@ nav ul {
     margin: 0;
 }
 
+nav .active-nav {
+	background-color: white;
+	color: #147936;
+	font-weight: 950;
+	border-radius: 20px;
+	padding: 0.5rem 1rem;
+	
+}
+
 nav a {
     color: #fff;
+    text-transform: uppercase;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .hero {
